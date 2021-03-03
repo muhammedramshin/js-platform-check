@@ -10,6 +10,19 @@
     window.onload = function(){
        var x= getMobileOperatingSystem()
         document.getElementById('view').innerHTML=x;
+        if( x === 'Android'){
+            window.location.replace("https://play.google.com/store/apps/details?id=com.top.app");
+        
+        }
+        else if(x === 'iOS'){
+
+            window.location.replace("https://apps.apple.com/in/app/top-learning/id1545107052");
+        }
+        else{
+            
+        }
+      
+
     };
     function getMobileOperatingSystem() {
   var userAgent = navigator.userAgent || navigator.vendor || window.opera;
